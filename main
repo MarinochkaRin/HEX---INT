@@ -1,0 +1,9 @@
+import hexInt
+
+val = input("\ni.\tValue: ")
+if(hexInt.stringIsHexVal(val)):
+    print("ii.\tNumber of bytes: ", hexInt.countNumberOfBytes(val))
+    print("iii.Little-endian:	", hexInt.hex_to_lendian(val))
+    print("iv.\tBig-endian: ", hexInt.hex_to_bendian(val))
+else:
+    print("Incorrect hex value.")
